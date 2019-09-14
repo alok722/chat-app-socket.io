@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>WebScockets</title>
+        <link href="/style.css" rel="stylesheet" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.dev.js"></script>
+    </head>
+    <body>
+        <div id="mario-chat">
+        	<div id="chat-window">
+        		<div id="output"></div>
+        		<div id="feedback"></div>
+        	</div>
+        	<input type="text" disabled id="handle">
+        	<textarea placeholder="Your message!" id="message" rows="4"></textarea>
+        	
+        	<button id="send">Send</button>
+        </div>
+        <script>
+        	window.onload = function retry() 
+        	{
+    			var user = prompt('Your Name, Please!');
+        		if(user != null){
+        			document.getElementById('handle').value = user;
+        		}
+        		if(user == null){
+        			retry();
+        		}
+			}
+        </script>
+        <script src="/chat.js"></script>
+    </body>
+</html>
