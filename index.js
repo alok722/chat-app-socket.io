@@ -5,7 +5,7 @@ var PORT = process.env.PORT || 3030;
 //App setup
 var app =express();
 var server = app.listen(PORT,function(){
-	console.log('Server started: 3030');
+	console.log('Server started:'+PORT);
 });
 
 //Static files
