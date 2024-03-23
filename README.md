@@ -12,11 +12,7 @@
   </a>       
 </p>
 
-> A chat app implemented using socket.io which has the basic chat features. The chat data is not stored, it is session based, sort of open chat room.
-
-### 🏠 [Homepage](https://sessionchat.herokuapp.com/)
-
-### ✨ [Demo](https://sessionchat.herokuapp.com/)
+> A chat app implemented using socket.io which has the basic chat features. The chat data is not stored, it is session-based, sort of open chat room.
 
 ## Install
 
